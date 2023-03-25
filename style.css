@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navBar{
+    background-color: grey;
+    display: flex;
+    height: 2.5rem;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+.navItem{
+    padding: 10px 12px;
+}
+html{
+    background-image: linear-gradient(to left, rgb(108, 222, 108), pink);
+}
+.gameContainer{
+    display: flex;
+    margin-top: 6rem;
+    justify-content: center;
+}
+.containerGrid{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+
+}
+.info{
+    margin-left: 10rem;
+    font-family:fantasy;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+.infoText{
+    font-family: cursive;
+    font-size: 2rem;
+}
+.cell{
+    display: flex;
+    font-size: 8vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.left-bor{
+    border-left: 0;
+}
+.top-bor{
+    border-top: 0;
+}
+.right-bor{
+    border-right: 0;
+}
+.bottom-bor{
+    border-bottom: 0;
+}
+.btn{
+    border-radius:15px ;
+    width: 8rem;
+    height: 2rem;
+    background-color: pink ;
+    font-size: large;
+}
+.btn:hover{
+    background-color: rgb(0, 155, 119);
+    color: white;
+}
