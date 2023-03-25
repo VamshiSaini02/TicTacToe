@@ -15,10 +15,6 @@ function changePlayer() {
         return currentPlayer = 'X';
     }
 }
-const reset = () => {
-    cells.innerText = ' ';
-}
-
 function winner(clicksCount) {
     let positions = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
     positions.forEach(e => {
@@ -43,6 +39,8 @@ function winner(clicksCount) {
 }
 document.querySelector('.btn').addEventListener('click', () => {
     currentPlayer = 'X';
+    count=0;
+    clicks=0;
     playerTurn.innerText = 'It is ' + currentPlayer + ' Turn';
     Array.from(cells).forEach(element => {
         element.innerText = '';
